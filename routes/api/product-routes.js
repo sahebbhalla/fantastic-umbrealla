@@ -55,7 +55,7 @@ router.get("/:id", (req, res) => {
      
 }).then(dbPostData =>{
     if(!dbPostData){
-        res.status(404).json({message:"no posts found"});
+        res.status(404).json({message:"no Products found"});
         return;
     }
     res.json(dbPostData);
